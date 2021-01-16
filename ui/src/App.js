@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1, 2), // '8px 16px'
     backgroundColor: theme.palette.primary.main, //material ui blue
     color: theme.palette.common.white,
+
+    //NESTED SELECTOR (& refer to root)
+    '&:hover': {
+      backgroundColor: theme.palette.secondary.main,
+    },
   },
 })) //return hook
 
