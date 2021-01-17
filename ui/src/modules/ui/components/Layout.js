@@ -1,6 +1,9 @@
 import React from 'react'
 import { CssBaseline, useMediaQuery } from '@material-ui/core'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
+import {
+  unstable_createMuiStrictModeTheme as createMuiTheme,
+  ThemeProvider,
+} from '@material-ui/core/styles'
 import Header from './Header'
 import Content from './Content'
 
