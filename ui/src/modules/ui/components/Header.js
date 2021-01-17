@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link as RouterLink } from 'react-router-dom'
+import { Link as RouterLink, useHistory } from 'react-router-dom'
 import {
   AppBar,
   Link,
@@ -31,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles()
+  const history = useHistory()
+
+  const navigateToCart = () => history.push('/cart')
+  //history.goBack()
+  //history.goForward()
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
@@ -61,7 +66,7 @@ export default function Header() {
           control={<Switch color="secondary"></Switch>}
           label="Dark"
         ></FormControlLabel>
-        <IconButton color="inherit">
+        <IconButton color="inherit" onClick={navigateToCart}>
           <Badge badgeContent={5} color="secondary">
             <ShoppingCart></ShoppingCart>
           </Badge>
