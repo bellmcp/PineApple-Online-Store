@@ -9,7 +9,7 @@ import {
   Chip,
 } from '@material-ui/core/'
 import { makeStyles } from '@material-ui/core/styles'
-import CurrencyFormat from 'utils/currencyFotmat'
+import CurrencyFormat from 'utils/currencyFormat'
 
 const useStyles = makeStyles((theme) => ({
   media: {
