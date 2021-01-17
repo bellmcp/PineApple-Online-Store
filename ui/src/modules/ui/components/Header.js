@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 import {
   AppBar,
   Link,
@@ -35,7 +36,8 @@ export default function Header() {
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <Link
-          href="/"
+          component={RouterLink}
+          to="/"
           color="inherit"
           underline="none"
           className={classes.logoLink}
@@ -46,7 +48,12 @@ export default function Header() {
             className={classes.logoImage}
           />
         </Link>
-        <Link href="/products" color="inherit" underline="none">
+        <Link
+          component={RouterLink}
+          to="/products"
+          color="inherit"
+          underline="none"
+        >
           Products
         </Link>
         <div className={classes.spacer}></div>
