@@ -1,13 +1,13 @@
 import React from 'react'
 import {
-  Headset,
+  DesktopWindows,
+  Tablet,
+  PhoneAndroid,
   Watch,
-  CameraAlt,
-  Nature,
-  Computer,
-  Book,
-  InvertColors,
-  Visibility,
+  Tv,
+  Headset,
+  HomeRounded,
+  DevicesOther,
 } from '@material-ui/icons'
 import { Grid } from '@material-ui/core'
 import CategoryItem from './CategoryItem'
@@ -15,36 +15,36 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const CATEGORIES = [
   {
-    title: 'Headphone',
-    Icon: Headset,
+    title: 'Computer',
+    Icon: DesktopWindows,
+  },
+  {
+    title: 'Tablet',
+    Icon: Tablet,
+  },
+  {
+    title: 'Phone',
+    Icon: PhoneAndroid,
   },
   {
     title: 'Watch',
     Icon: Watch,
   },
   {
-    title: 'Camera',
-    Icon: CameraAlt,
+    title: 'TV',
+    Icon: Tv,
   },
   {
-    title: 'Nature',
-    Icon: Nature,
+    title: 'Music',
+    Icon: Headset,
   },
   {
-    title: 'Computer',
-    Icon: Computer,
+    title: 'Home',
+    Icon: HomeRounded,
   },
   {
-    title: 'Book',
-    Icon: Book,
-  },
-  {
-    title: 'Lotion',
-    Icon: InvertColors,
-  },
-  {
-    title: 'Eyeglass',
-    Icon: Visibility,
+    title: 'Other',
+    Icon: DevicesOther,
   },
 ]
 
@@ -58,7 +58,7 @@ export default function CategoryList() {
   const classes = useStyles()
 
   return (
-    <Grid container justify="center" spacing={2} className={classes.root}>
+    <Grid container justify="space-evenly" spacing={4} className={classes.root}>
       {CATEGORIES.map((category) => (
         <CategoryItem key={category.title} {...category}></CategoryItem>
       ))}

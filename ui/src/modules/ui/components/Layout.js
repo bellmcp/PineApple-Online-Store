@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { CssBaseline, useMediaQuery } from '@material-ui/core'
+import { grey, blue } from '@material-ui/core/colors'
 import {
   unstable_createMuiStrictModeTheme as createMuiTheme,
   ThemeProvider,
 } from '@material-ui/core/styles'
 import Header from './Header'
 import Content from './Content'
+import Footer from './Footer'
 import * as actions from '../actions'
 
 export default function Layout() {
@@ -24,7 +26,14 @@ export default function Layout() {
     palette: {
       type: darkMode ? 'dark' : 'light',
       primary: {
-        main: '#1abc9c',
+        main: grey[50],
+      },
+      secondary: {
+        main: blue[500],
+      },
+      background: {
+        default: darkMode ? '#111' : '#fafafa',
+        paper: darkMode ? '#212121' : '#fff',
       },
     },
   })
@@ -34,6 +43,7 @@ export default function Layout() {
       <CssBaseline></CssBaseline>
       <Header></Header>
       <Content></Content>
+      <Footer></Footer>
     </ThemeProvider>
   )
 }

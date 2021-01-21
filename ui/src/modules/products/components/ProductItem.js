@@ -16,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 200,
   },
+  desc: {
+    display: '-webkit-box',
+    WebkitLineClamp: 4,
+    WebkitBoxOrient: 'vertical',
+    overflow: 'hidden',
+  },
   footer: {
     marginTop: theme.spacing(2),
   },
@@ -37,11 +43,16 @@ export default function ProductItem({
 
   return (
     <Grid item xs={12} sm={6} lg={4}>
-      <Card onClick={navigateToDetails}>
+      <Card onClick={navigateToDetails} variant="outlined">
         <CardActionArea>
           <CardMedia image={image} title={name} className={classes.media} />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              style={{ fontWeight: 500 }}
+            >
               {name}
             </Typography>
             <Typography
@@ -49,6 +60,7 @@ export default function ProductItem({
               variant="body2"
               component="p"
               color="textSecondary"
+              className={classes.desc}
             >
               {desc}
             </Typography>
@@ -58,8 +70,14 @@ export default function ProductItem({
               justify="space-between"
               className={classes.footer}
             >
-              <span>{CurrencyFormat(price)}</span>
-              <Chip label={category} size="small"></Chip>
+              <Typography variant="body2">{CurrencyFormat(price)}</Typography>
+              <Chip
+                label={category}
+                size="medium"
+                color="secondary"
+                variant="outlined"
+                style={{ fontWeight: 500 }}
+              ></Chip>
             </Grid>
           </CardContent>
         </CardActionArea>
