@@ -1,19 +1,5 @@
 {
-  "orders": [
-    {
-      "deliveryInfo": {
-        "name": "Bellmcp",
-        "email": "bellmcp@test.com",
-        "address": "Test Address"
-      },
-      "productIds": [
-        "2",
-        "1"
-      ],
-      "price": 2000,
-      "id": 1
-    }
-  ],
+  "orders": [],
   "products": [
     {
       "id": 1,

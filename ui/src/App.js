@@ -1,7 +1,8 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router } from 'react-router-dom'
-import configureStore from 'store/configureStore'
+import { ConnectedRouter } from 'connected-react-router'
+
+import configureStore, { history } from 'store/configureStore'
 import Layout from 'modules/ui/components/Layout'
 
 const store = configureStore()
@@ -9,9 +10,9 @@ const store = configureStore()
 export default function App() {
   return (
     <Provider store={store}>
-      <Router>
+      <ConnectedRouter history={history}>
         <Layout></Layout>
-      </Router>
+      </ConnectedRouter>
     </Provider>
   )
 }

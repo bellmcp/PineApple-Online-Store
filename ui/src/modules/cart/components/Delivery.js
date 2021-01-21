@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
@@ -29,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Delivery({ onSubmit }) {
   const classes = useStyles()
   const dispatch = useDispatch()
+  const history = useHistory()
   const { register, handleSubmit, errors } = useForm({
     mode: 'onBlur',
     resolver: yupResolver(
@@ -45,6 +47,7 @@ export default function Delivery({ onSubmit }) {
   const submit = (deliveryInfo) => {
     const action = actions.checkout(deliveryInfo)
     dispatch(action)
+    history.push('/')
   }
 
   return (

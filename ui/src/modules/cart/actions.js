@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { push } from 'connected-react-router'
 import * as uiActions from 'modules/ui/actions'
 import * as productActions from 'modules/products/actions'
 
@@ -64,6 +65,7 @@ function checkout(deliveryInfo) {
 
     dispatch({ type: CHECKOUT_SUCCESS, payload: { order: data } })
     dispatch(uiActions.setFlashMessage('Your order has been placed'))
+    dispatch(push('/'))
   }
 }
 
