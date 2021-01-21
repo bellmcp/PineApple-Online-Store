@@ -1,4 +1,5 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -11,6 +12,8 @@ import {
   CardContent,
   Typography,
 } from '@material-ui/core'
+
+import * as actions from '../actions'
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -25,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Delivery({ onSubmit }) {
   const classes = useStyles()
+  const dispatch = useDispatch()
   const { register, handleSubmit, errors } = useForm({
     mode: 'onBlur',
     resolver: yupResolver(
@@ -39,7 +43,8 @@ export default function Delivery({ onSubmit }) {
   console.log(errors)
 
   const submit = (deliveryInfo) => {
-    console.log(deliveryInfo)
+    const action = actions.checkout(deliveryInfo)
+    dispatch(action)
   }
 
   return (

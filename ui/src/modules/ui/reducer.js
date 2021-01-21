@@ -1,4 +1,9 @@
-import { TOGGLE_DARK_MODE, SET_DARK_MODE } from './actions'
+import {
+  TOGGLE_DARK_MODE,
+  SET_DARK_MODE,
+  SET_FLASH_MESSAGE,
+  CLEAR_FLASH_MESSAGE,
+} from './actions'
 
 const initialState = {
   darkMode: false,
@@ -11,6 +16,10 @@ export default function (state = initialState, action) {
       return { ...state, darkMode: !state.darkMode } // { flashMessage: null, darkMode: !state.darkMode}
     case SET_DARK_MODE:
       return { ...state, darkMode: action.payload.darkMode }
+    case SET_FLASH_MESSAGE:
+      return { ...state, flashMessage: action.payload.message }
+    case CLEAR_FLASH_MESSAGE:
+      return { ...state, flashMessage: null }
     default:
       return state
   }
