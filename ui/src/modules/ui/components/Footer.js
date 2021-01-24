@@ -18,11 +18,10 @@ export default function Footer() {
           alignItems="center"
           style={{ minHeight: 96 }}
         >
-          <Typography variant="body2" color="textSecondary">
-            Copyright © {new Date().getFullYear()} PineApple Inc. All rights
-            reserved.
+          <Typography variant="body2" color="textSecondary" style={{textAlign: "center"}}>
+            Copyright © {new Date().getFullYear()} PineApple Inc. Inspired by <Link href="https://www.apple.com/" color="secondary">Apple</Link>. For educational purposes only.
           </Typography>
-          <Typography variant="body2" color="textSecondary">
+          <Typography variant="body2" color="textSecondary" style={{textAlign: "center", marginTop: matches ? '0' : '8px'}}>
             Designed and developed by{' '}
             <Link href="https://bellmcp.work" color="secondary">
               Wutipat Khamnuansin
