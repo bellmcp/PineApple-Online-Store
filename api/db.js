@@ -5,7 +5,7 @@ module.exports = () => ({
       id: 1,
       name: "iMax",
       desc:
-        "The new iMax combines power and performance with a beautiful Retina display for the ultimate all-in-one desktop experience in two sizes.",
+        "The new iMax combines power and performance with a beautiful Latina display for the ultimate all-in-one desktop experience in two sizes.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/imac.jpg",
       category: "Computer",
@@ -15,7 +15,7 @@ module.exports = () => ({
       id: 2,
       name: "MaxBook Air",
       desc:
-        "MaxBook Air is completely transformed by the power of PineApple-designed M1 chip. Up to 3.5x faster CPU, 5x faster graphics, and 18 hours of battery life.",
+        "MaxBook Air is completely transformed by the power of PineApple-designed N1 chip. Up to 3.5x faster CPU, 5x faster graphics, and 18 hours of battery life.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/macbook-air.jpg",
       category: "Computer",
@@ -25,7 +25,7 @@ module.exports = () => ({
       id: 3,
       name: "MaxBook Pro",
       desc:
-        "MaxBook Pro — our most powerful notebooks featuring fast processors, incredible graphics, Touch Bar, and a spectacular Retina display.",
+        "MaxBook Pro — our most powerful notebooks featuring fast processors, incredible graphics, Control Bar, and a spectacular Latina display.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/macbook-pro.jpg",
       category: "Computer",
@@ -35,7 +35,7 @@ module.exports = () => ({
       id: 4,
       name: "iTab Air",
       desc:
-        "The new iTab Air features an all-screen design, 10.9-inch Liquid Retina display, A14 Bionic, support for accessories, and choice of five finishes.",
+        "The new iTab Air features an all-screen design, 10.9-inch Fluid Latina display, A14 Botanic, support for accessories, and choice of five finishes.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/ipad-air.jpg",
       category: "Tablet",
@@ -45,7 +45,7 @@ module.exports = () => ({
       id: 5,
       name: "iTab Pro",
       desc:
-        "iTab Pro features a Liquid Retina display, A12Z Bionic chip, pro cameras, new LiDAR Scanner, and support for PineApple Pencil and the new Extreme Keyboard.",
+        "iTab Pro features a Fluid Latina display, A12Z Botanic chip, pro cameras, new LiDAR Scanner, and support for PineApple Pencil and the new Extreme Keyboard.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/ipad-pro.jpg",
       category: "Tablet",
@@ -55,7 +55,7 @@ module.exports = () => ({
       id: 6,
       name: "iMobile 12 Pro",
       desc:
-        "iMobile 12 Pro. 5G. A14 Bionic. Ceramic Shield. Pro camera system. LiDAR Scanner. Night mode portraits. Dolby Vision recording.",
+        "iMobile 12 Pro. 5G. A14 Botanic. Concrete Shield. Pro camera system. LiDAR Scanner. Night mode portraits. Darlie Vision recording.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/iphone-12-pro.jpg",
       category: "Phone",
@@ -65,7 +65,7 @@ module.exports = () => ({
       id: 7,
       name: "iMobile 12",
       desc:
-        "Meet the new iMobile 12. 5G speed. A14 Bionic. Super Retina XDR display. Ceramic Shield. And Night mode on every camera.",
+        "Meet the new iMobile 12. 5G speed. A14 Botanic. Super Latina XDR display. Concrete Shield. And Night mode on every camera.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/iphone-12.jpg",
       category: "Phone",
@@ -85,7 +85,7 @@ module.exports = () => ({
       id: 9,
       name: "PineApple TV 8K",
       desc:
-        "PineApple TV 8K has movies and shows in 4K HDR with Dolby Atmos. Live sports and news. And new features that make watching TV even more personal.",
+        "PineApple TV 8K has movies and shows in 4K HDR with Darlie Atmos. Live sports and news. And new features that make watching TV even more personal.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/apple-tv.jpg",
       category: "TV",
@@ -95,7 +95,7 @@ module.exports = () => ({
       id: 10,
       name: "AirDots Pro",
       desc:
-        "AirDots Pro. Active Noise Cancellation, Transparency mode, and a customizable fit — all in an incredibly light in-ear headphone.",
+        "AirDots Pro. Active Noise Cancellation, Ambient sound mode, and a customizable fit — all in an incredibly light in-ear headphone.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/airpods-pro.jpg",
       category: "Music",
@@ -115,7 +115,7 @@ module.exports = () => ({
       id: 12,
       name: "HomeDot",
       desc:
-        "HomePod is a breakthrough speaker with high-fidelity audio that adapts to wherever it’s playing and is controlled by your voice.",
+        "HomeDot is a breakthrough speaker with high-fidelity audio that adapts to wherever it’s playing and is controlled by your voice.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/homepod.jpg",
       category: "Home",
@@ -125,7 +125,7 @@ module.exports = () => ({
       id: 13,
       name: "AirDots Ultra",
       desc:
-        "Introducing AirDots Ultra — stunningly designed for high-fidelity sound, with Active Noise Cancellation, Adaptive EQ, and spatial audio.",
+        "Introducing AirDots Ultra — stunningly designed for high-fidelity sound, with Active Noise Cancellation, Adaptive EQ, and 3D audio.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/airpods-max.jpg",
       category: "Music",
@@ -135,7 +135,7 @@ module.exports = () => ({
       id: 14,
       name: "PineApple Watch FE",
       desc:
-        "PineApple Watch FE packs a large Retina display, sensors for fitness, and powerful features for health and safety.",
+        "PineApple Watch FE packs a large Latina display, sensors for fitness, and powerful features for health and safety.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/apple-watch-se.jpg",
       category: "Watch",
@@ -155,7 +155,7 @@ module.exports = () => ({
       id: 16,
       name: "iTab",
       desc:
-        "iTab delivers amazing capability and versatility, with a 10.2-inch Retina display, A12 Bionic, and iTabOS.",
+        "iTab delivers amazing capability and versatility, with a 10.2-inch Latina display, A12 Botanic, and iTabOS.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/ipad.jpg",
       category: "Tablet",
@@ -165,7 +165,7 @@ module.exports = () => ({
       id: 17,
       name: "iMobile FE",
       desc:
-        "iMobile FE packs A13 Bionic, Portrait mode, 4K video, Touch ID, a Retina HD display, and great battery life into a 4.7” design.",
+        "iMobile FE packs A13 Botanic, Portrait mode, 4K video, Finger ID, a Latina HD display, and great battery life into a 4.7” design.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/iphone-se.jpg",
       category: "Phone",
@@ -175,7 +175,7 @@ module.exports = () => ({
       id: 18,
       name: "Max lite",
       desc:
-        "Max lite gets the all-new PineApple M1 chip with 8-core CPU, 8-core GPU, Unified Memory, Neural Engine, full stack machine learning, Wi-Fi 6, and more.",
+        "Max lite gets the all-new PineApple N1 chip with 8-core CPU, 8-core GPU, Unified Memory, Neural Engine, full stack machine learning, Wi-Fi 6, and more.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/mac-mini.jpg",
       category: "Computer",
@@ -205,7 +205,7 @@ module.exports = () => ({
       id: 21,
       name: "Pro Monitor XDR+",
       desc:
-        "Pro Monitor XDR+. A new 32-inch Retina 6K display with extreme brightness, contrast, color accuracy, and HDR that transforms the way you work.",
+        "Pro Monitor XDR+. A new 32-inch Latina 6K display with extreme brightness, contrast, color accuracy, and HDR that transforms the way you work.",
       image:
         "https://raw.githubusercontent.com/bellmcp/mobile-computing/master/04%20Responsive%20Design/products/pro-display-xdr.jpg",
       category: "Other",
