@@ -53,6 +53,7 @@ export default function Header() {
       elevation={0}
       style={{
         backdropFilter: 'saturate(180%) blur(20px)',
+        WebkitBackdropFilter: 'saturate(180%) blur(20px)',
         backgroundColor: !darkMode
           ? 'hsla(0,0%,100%,.65)'
           : 'rgba(29,29,31,0.72)',
