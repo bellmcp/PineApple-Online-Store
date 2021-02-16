@@ -1,13 +1,4 @@
-import {
-  TOGGLE_DARK_MODE,
-  SET_DARK_MODE,
-  SET_FLASH_MESSAGE,
-  CLEAR_FLASH_MESSAGE,
-  toggleDarkMode,
-  setDarkMode,
-  setFlashMessage,
-  clearFlashMessage,
-} from './actions'
+import { TOGGLE_DARK_MODE, toggleDarkMode } from './actions'
 
 describe('toggleDarkMode', () => {
   test('returns an action with type `TOGGLE_DARK_MODE`', () => {

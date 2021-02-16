@@ -7,6 +7,12 @@ const LOAD_PRODUCT_SUCCESS = 'app/products/LOAD_PRODUCT_SUCCESS'
 const LOAD_PRODUCT_FAILURE = 'app/products/LOAD_PRODUCT_FAILURE'
 const CLEAR_PRODUCTS = 'app/products/CLEAR_PRODUCTS'
 
+/**
+ * Returns Redux Thunk function that dispatches LOAD_PRODUCTS action
+ * @function loadProducts
+ * @param {string} query - Query parameter for fetch products by category.
+ * @returns {function} - Redux Thunk function.
+ */
 function loadProducts(query) {
   return async (dispatch) => {
     dispatch({ type: LOAD_PRODUCTS_REQUEST })

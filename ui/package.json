@@ -53,7 +53,9 @@
     "customize-cra": "^1.0.0",
     "enzyme": "^3.11.0",
     "jest-enzyme": "^7.1.2",
+    "moxios": "^0.4.0",
     "react-app-rewired": "^2.1.8",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.4"
   }
 }
