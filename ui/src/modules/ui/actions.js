@@ -3,6 +3,10 @@ const SET_DARK_MODE = 'app/ui/SET_DARK_MODE'
 const SET_FLASH_MESSAGE = 'app/ui/SET_FLASH_MESSAGE'
 const CLEAR_FLASH_MESSAGE = 'app/ui/CLEAR_FLASH_MESSAGE'
 
+/**
+ * @function toggleDarkMode
+ * @returns {object} - Action object with type `TOGGLE_DARK_MODE`
+ */
 function toggleDarkMode() {
   return {
     type: TOGGLE_DARK_MODE,

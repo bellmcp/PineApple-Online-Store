@@ -10,6 +10,12 @@ const initialState = {
   flashMessage: null,
 }
 
+/**
+ * @function UiReducer
+ * @param {array} state - Object of darkMode and flashMessage
+ * @param {object} action - Action to be reduced
+ * @returns {object} - New ui state
+ */
 export default function (state = initialState, action) {
   switch (action.type) {
     case TOGGLE_DARK_MODE:
