@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation } from 'react-router-dom'
 import queryString from 'query-string'
 import { Typography, Grid, CircularProgress, Box } from '@material-ui/core/'
 import { makeStyles } from '@material-ui/core/styles'
+import Pagination from '@material-ui/lab/Pagination'
 
 import CategoryList from './CategoryList'
 import ProductItem from './ProductItem'
@@ -25,6 +26,23 @@ export default function ProductList() {
   const { search } = useLocation()
   const { category } = queryString.parse(search) //Return Key (Category) and Value
 
+  const [currentPage, setCurrentPage] = useState(1)
+  const [productsPerPage] = useState(9)
+  const indexOfLastProduct = currentPage * productsPerPage
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  )
+
+  const pageNumbers = []
+  for (let i = 1; i <= Math.ceil(products.length / productsPerPage); i++) {
+    pageNumbers.push(i)
+  }
+  const paginate = (event, value) => {
+    setCurrentPage(value)
+  }
+
   // const [products, setProducts] = useState([])
   // const [isLoading, setIsLoading] = useState(false)
 
@@ -42,7 +60,7 @@ export default function ProductList() {
 
   useEffect(() => {
     const action = actions.loadProducts(search)
-
+    setCurrentPage(1)
     dispatch(action)
   }, [dispatch, search])
 
@@ -66,11 +84,26 @@ export default function ProductList() {
           <CircularProgress color="secondary"></CircularProgress>
         </div>
       ) : (
-        <Grid container spacing={6}>
-          {products.map((product) => (
-            <ProductItem key={product.id} {...product}></ProductItem>
-          ))}
-        </Grid>
+        <>
+          <Grid container spacing={6}>
+            {currentProducts.map((product) => (
+              <ProductItem key={product.id} {...product}></ProductItem>
+            ))}
+          </Grid>
+          <Grid
+            container
+            spacing={1}
+            direction="row"
+            justify="center"
+            alignItems="center"
+            alignContent="center"
+            wrap="nowrap"
+          >
+            <Box mt={6}>
+              <Pagination count={pageNumbers.length} onChange={paginate} />
+            </Box>
+          </Grid>
+        </>
       )}
     </div>
   )
